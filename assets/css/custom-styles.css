@@ -1,0 +1,414 @@
+/*Fonts*/
+@font-face{font-family:euclid circular b;font-style:normal;font-weight:400;src:local('Euclid Circular B'),url('../fonts/EuclidCircularBRegular.woff') format('woff')}
+@font-face{font-family:euclid circular b;font-style:italic;font-weight:400;src:local('Euclid Circular B'),url('../fonts/EuclidCircularBItalic.woff') format('woff')}
+@font-face{font-family:euclid circular b;font-style:normal;font-weight:300;src:local('Euclid Circular B'),url('../fonts/EuclidCircularBLight.woff') format('woff')}
+@font-face{font-family:euclid circular b;font-style:italic;font-weight:300;src:local('Euclid Circular B'),url('../fonts/EuclidCircularBLightItalic.woff') format('woff')}
+@font-face{font-family:euclid circular b;font-style:normal;font-weight:500;src:local('Euclid Circular B'),url('../fonts/EuclidCircularBMedium.woff') format('woff')}
+@font-face{font-family:euclid circular b;font-style:italic;font-weight:500;src:local('Euclid Circular B'),url('../fonts/EuclidCircularBMediumItalic.woff') format('woff')}
+@font-face{font-family:euclid circular b;font-style:normal;font-weight:600;src:local('Euclid Circular B'),url('../fonts/EuclidCircularBSemiBold.woff') format('woff')}
+@font-face{font-family:euclid circular b;font-style:italic;font-weight:600;src:local('Euclid Circular B'),url('../fonts/EuclidCircularBSemiBoldItalic.woff') format('woff')}
+@font-face{font-family:euclid circular b;font-style:normal;font-weight:700;src:local('Euclid Circular B'),url('../fonts/EuclidCircularBBold.woff') format('woff')}
+@font-face{font-family:euclid circular b;font-style:italic;font-weight:700;src:local('Euclid Circular B'),url('../fonts/EuclidCircularBBoldItalic.woff') format('woff')}
+
+:root {
+  --color-default: #000000;
+  --color-dark-eighty: #333333;
+  --color-dark-sixty: #666666;
+  --color-dark-fourty: #999999;
+  --color-secondary: #2F2836;
+  --color-default-rgb: 0, 0, 0;
+  --color-black-background: #000;
+  --color-black-background-rgb: 0, 0, 0;
+  --color-c-gray: #ccc;
+  --color-white: #ffffff;
+  --color-white-rgb: 255, 255, 255;
+  --font-primary: 'Euclid Circular B', sans-serif;
+  --font-secondary: 'Proxima Nova Extra Condensed', sans-serif;
+  --font-size-default: 14px;
+  --font-size-twelve: 12px;
+  --font-size-sixteen: 16px;
+  --font-size-eighteen: 18px;
+  --font-size-twenty: 20px;
+  --font-size-twentytwo: 22px;
+  --font-size-twentyfour: 24px;
+  --font-size-twentysix: 26px;
+  --font-size-twentyeight: 28px;
+  --font-size-thirty: 30px;
+  --font-size-thirtytwo: 32px;
+  --font-size-thirtyfour: 34px;
+  --font-size-thirtysix: 36px;
+  --font-size-thirtyeight: 38px;
+  --font-size-fourty: 40px;
+  --font-size-fourtytwo: 42px;
+  --font-size-fourtyfour: 44px;
+  --font-size-fourtysix: 46px;
+  --font-weight-bold: bold;
+  --font-weight-x-bold: 900;
+  --font-weight-semibold: 600;
+  --font-weight-normal: 400;
+  --font-weight-light: 300;
+  --lh-default: normal;
+  --lh-one: 1;
+  --lh-onebytwo: 1.2;
+  --lh-onebyfive: 1.5;
+  --radius-small: 5px;
+  --radius-medium: 10px;
+  --radius-large: 15px;
+  --radius-x-large: 25px;
+  --radius-full: 50px;
+  --border-one: 1px solid;
+  --border-two: 2px solid;
+}
+body {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-default);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--lh-onebyfive);
+  color: var(--color-default);
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+  background: #232323 !important;
+}
+html {
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+section {
+  width: 100%;
+}
+section {
+  padding: 40px 0;
+  position: relative;
+}
+.section-padding-x-small {
+  padding: 20px 0 !important;
+}
+.section-padding-medium {
+  padding: 80px 0 !important;
+}
+.section-padding-large {
+  padding: 120px 0 !important;
+}
+.section-padding-x-large {
+  padding: 180px 0 !important;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: var(--font-primary);
+}
+.primary-font {
+  font-family: var(--font-primary) !important;
+}
+.primary-color {
+  color: var(--color-default);
+}
+select {
+  appearance:auto !important;
+  webkit-appearance:auto !important;
+}
+
+.f10 {font-size: 10px;}
+.f12 {font-size: var(--font-size-twelve) !important ;}
+.f14 {font-size: var(--font-size-default) !important ;}
+.f16 {font-size: var(--font-size-sixteen) !important ;}
+.f18 {font-size: var(--font-size-eighteen) !important ;}
+.f20 {font-size: var(--font-size-twenty) !important ;}
+.f22 {font-size: var(--font-size-twentytwo) !important ;}
+.f24 {font-size: var(--font-size-twentyfour) !important ;}
+.f26 {font-size: var(--font-size-twentysix) !important ;}
+.f28 {font-size: var(--font-size-twentyeight) !important ;}
+.f30 {font-size: var(--font-size-thirty) !important ;}
+.f32 {font-size: var(--font-size-thirtytwo) !important ;}
+.f34 {font-size: var(--font-size-thirtyfour) !important ;}
+.f36 {font-size: var(--font-size-thirtysix) !important ;}
+.f38 {font-size: var(--font-size-thirtyeight) !important ;}
+.f40 {font-size: var(--font-size-fourty) !important ;}
+.f42 {font-size: var(--font-size-fourtytwo) !important ;}
+.f44 {font-size: var(--font-size-fourtyfour) !important ;}
+.f46 {font-size: var(--font-size-fourtysix) !important ;}
+
+
+.w-300 { font-weight: 300 !important;}
+.w-400 { font-weight: 400 !important;}
+.w-500 { font-weight: 500 !important;}
+.w-600 { font-weight: 600 !important;}
+.w-700 { font-weight: 700 !important;}
+.w-800 { font-weight: 800 !important;}
+.w-900 { font-weight: 900 !important;}
+
+.w100{ width:100% !important; }
+
+
+/*--------------------------------------------------------------
+# Start Common CSS
+--------------------------------------------------------------*/
+.header {
+    font-size: 40px;
+    color: var(--color-white);
+    font-weight: var(--font-weight-default);
+}
+.sub-head{
+  color: #E3C295;
+  font-size: 26px;
+}
+.sub-desc {
+    color: #fff;
+    font-size: 20px;
+}
+.gradient-color{
+  background-image: linear-gradient(180deg, #4F5C57, #AC6D42);
+}
+.gradient-text {
+  background: linear-gradient(180deg, #4F5C57, #AC6D42);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+.color-black{
+  color: #000000;
+}
+/*--------------------------------------------------------------
+# End Common CSS
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Start Animation CSS
+--------------------------------------------------------------*/
+.circles-wrapper {
+  width: 1500px;
+  height: 1500px;
+  position: absolute;
+  top: -800px;
+  bottom: 0;
+  left: -1641px;
+  right: 0;
+  margin: auto;
+  border-radius: 50%;
+}
+.circle {
+  border: 3px solid #343232;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: relative;
+}
+.circle::before {
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 2px;
+  background: #FFAE75;
+  top: -2px;
+  border-radius: 50%;
+  /*box-shadow: 0 0 10px 6px rgba(237, 20, 61, .8);*/
+}
+.circle-lg {
+  width: 1500px;
+  height: 1500px;
+  animation: rotateCircles 5.1s linear infinite;
+}
+.circles-wrapper-2 {
+  width: 1500px;
+  height: 1500px;
+  position: absolute;
+  top: -781px;
+  bottom: 0;
+  left: 0;
+  right: -1754px;
+  margin: auto;
+  border-radius: 50%;
+}
+.circle-2 {
+  border: 3px solid #343232;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: relative;
+}
+.circle-2::before {
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 2px;
+  background: #A9DACB;
+  top: -2px;
+  border-radius: 50%;
+  /*box-shadow: 0 0 10px 6px rgba(237, 20, 61, .8);*/
+}
+.circle-lg-2 {
+  width: 1500px;
+  height: 1500px;
+  animation: rotateCircles2 5.1s linear infinite;
+}
+@keyframes rotateCircles {
+  from {
+    transform: rotate(0);
+  } to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotateCircles2 {
+  from {
+    transform: rotate(360deg);
+  } to {
+    transform: rotate(0);
+  }
+}
+
+/*--------------------------------------------------------------
+# End Animation CSS
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Start Header
+--------------------------------------------------------------*/
+#header {
+  z-index: 997;
+  padding: 0px 0 0 0;
+}
+#header .logo {
+  margin: 0;
+  padding: 10px;
+}
+#header .logo a {
+  color: #fff;
+}
+#header .nav-bottom-border{
+  border-bottom: 1px solid #ccc;
+}
+#header.sticky {
+  position:fixed;
+  top:0;
+  left:0;
+  background-color:#232323;
+  width:100%;
+  height:auto;/*height:80px; commeted for logo testing*/
+  animation: headerSticky .95s ease forwards;
+  z-index:9
+}
+@keyframes headerSticky {
+  0% {
+    transform:translateY(-100%)
+  }
+  100% {
+    transform:translateY(0)
+  }
+}
+.lines-bg-1{
+  background-image: url(../images/banner-lines-2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.navbar{z-index: 99;}
+/*--------------------------------------------------------------
+# End Header
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# banner-section
+--------------------------------------------------------------*/
+.carrer-card{
+  padding: 80px 30px;
+}
+.carrer-card-heading{
+  font-size: 40px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.carrer-card-desc{
+  font-size: 20px;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.carrer-card-desc-span{
+  font-weight: 600;
+}
+.carrer-list{
+  font-size: 22px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.carrer-card .form-label{
+  color: #000;
+  font-weight: 700;
+}
+.carrer-card .messageform-field{
+  border-bottom: 3px solid #000;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-radius: 0px;
+  background-color: transparent !important;
+  margin-bottom: 50px ;
+  color: #868788 !important;
+}
+.carrer-card .form-control.messageform-field:focus {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid #000;
+  box-shadow: 0 0 0 0; 
+}
+.send-btn{
+  color: #fff;
+  font-weight: 500;
+  background-color: #232424;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 22px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
+@media (max-width:576px) {
+  .mob-f10 {font-size: 10px;}
+  .mob-f12 {font-size: var(--font-size-twelve) !important ;}
+  .mob-f14 {font-size: var(--font-size-default) !important ;}
+  .mob-f16 {font-size: var(--font-size-sixteen) !important ;}
+  .mob-f18 {font-size: var(--font-size-eighteen) !important ;}
+  .mob-f20 {font-size: var(--font-size-twenty) !important ;}
+  .mob-f22 {font-size: var(--font-size-twentytwo) !important ;}
+  .mob-f24 {font-size: var(--font-size-twentyfour) !important ;}
+  .mob-f26 {font-size: var(--font-size-twentysix) !important ;}
+  .mob-f28 {font-size: var(--font-size-twentyeight) !important ;}
+  .mob-f30 {font-size: var(--font-size-thirty) !important ;}
+  .mob-f32 {font-size: var(--font-size-thirtytwo) !important ;}
+  .mob-f34 {font-size: var(--font-size-thirtyfour) !important ;}
+  .mob-f36 {font-size: var(--font-size-thirtysix) !important ;}
+  .mob-f38 {font-size: var(--font-size-thirtyeight) !important ;}
+  .mob-f40 {font-size: var(--font-size-fourty) !important ;}
+  .mob-f42 {font-size: var(--font-size-fourtytwo) !important ;}
+  .mob-f44 {font-size: var(--font-size-fourtyfour) !important ;}
+  .mob-f46 {font-size: var(--font-size-fourtysix) !important ;}
+
+  .mob-dis-non{ display: none !important; }
+  #banner-section .header{
+    font-size: 34px;
+    text-align: center;
+  }
+  #banner-section .sub-head{
+    font-size: 20px;
+    text-align: center;
+  }
+  #banner-section .sub-desc{
+    font-size: 16px;
+    text-align: center;
+  }
+  #banner-section .description{
+    font-size: var(--font-size-sixteen);
+    text-align: center;
+  }
+  .circle-2, .circle, #footer .circle, .circles-wrapper, .circles-wrapper-2, #footer .circles-wrapper {
+    display: none !important;
+  }
+}
+
+
